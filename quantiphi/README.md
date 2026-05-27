@@ -42,14 +42,37 @@ To maintain a clean and modular architecture, the front-end monolith has been se
 
 ## 🛠️ Setup & Local Installation
 
-Because this is a pure front-end application using vanilla web technologies, no servers or node modules (`npm install`) are required!
+Because this is a pure front-end application using vanilla web technologies, no heavy servers or node modules are required! 
 
+You can run the application using two methods:
+
+### Method 1: Launch Directly (No Terminal Required)
 1. Clone this repository to your local machine.
 2. Obtain a free **Google Gemini API Key** from [Google AI Studio](https://aistudio.google.com/).
 3. Open `app.js` in your code editor.
 4. Locate the `GEMINI_API_KEY` variable at the top of the file and paste your key inside the quotes.
-5. Double click **`index.html`** to open the platform in your browser.
-6. Click **"Upload CSV"** in the bottom left corner to load your employee data and begin analyzing!
+5. Double-click **`index.html`** inside the project folder to open the platform directly in your browser.
+6. Click **"Upload CSV"** in the bottom-left corner to load employee data and begin analyzing!
+
+### Method 2: Launch via Local Web Server (Recommended)
+To run the project via the command line, you need to open your terminal in the **project root folder** (the main folder containing `index.html`, `app.js`, and `styles.css`) and run a local server:
+
+1. Open your **Terminal** (macOS/Linux) or **Command Prompt/PowerShell** (Windows).
+2. Change directory (`cd`) to the project folder:
+   ```bash
+   cd /path/to/quantiphi
+   ```
+3. Run one of the following commands:
+   * **Using Python 3** (Pre-installed on macOS/Linux):
+     ```bash
+     python3 -m http.server 8000
+     ```
+     Once running, open your web browser and go to: **`http://localhost:8000`**
+   * **Using Node.js/NPM**:
+     ```bash
+     npx serve
+     ```
+     Once running, open your web browser and go to the address printed in the terminal (usually **`http://localhost:3000`**).
 
 ## ⚠️ Important Security Note for GitHub
 
